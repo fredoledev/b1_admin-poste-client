@@ -103,7 +103,6 @@
 
     ![Capture d'écran de l'étape 2](/Exercices/Intermédiaire01/Screen3.png)
 
-
 ---
 
 ### Exercice Intermédiaire n°2
@@ -135,3 +134,21 @@
     ![Capture d'écran de l'étape 2](/Exercices/Intermédiaire02/Screen2.png)
 
     Nous avons maintenant un script bash qui sauvegardera tous les jours à 2h le contenu du dossier Documents dans le dossier Backups.
+
+---
+
+### Exercice Intermédiaire n°3
+
+1. ***Affiche les logs du service ssh sur les 24 dernières heures***
+
+        sudo journalctl -u ssh --since "24 hours ago"
+    On utilise la commande `grep` pour rechercher toutes les occurrences du mot `sshd` (processus en charge des opérations SSH) dans le fichier log concerné.
+
+    ![Capture d'écran de l'étape 1](/Exercices/Intermédiaire03/Screen1.png)
+
+2. ***Filtre les logs pour avoir que les connexions ratées***
+
+
+
+3. ***Sauvegarde tout dans un fichier sshd_failed_logins.txt***
+
